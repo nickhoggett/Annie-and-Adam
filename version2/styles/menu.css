@@ -1,0 +1,15 @@
+body {
+    background-color:  rebeccapurple;
+    text-align: right;
+}
+
+menu {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+menu a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    
+}

@@ -1,0 +1,147 @@
+body {
+    background-image: url("../img/Capture.JPG");
+    color: rgba(24, 17, 90, 1);
+    margin: 0;
+    height: 100%;
+}
+
+a {
+    color: rgba(24, 17, 90, 1);
+}
+
+.imgLink {
+    float: left;
+    width: 400px;
+}
+.main-sub {
+    margin: 200px;
+}
+
+.main-container {
+    background-color: rgba(253, 246, 231, 1);
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.time {
+    margin: 10px;
+    height: 80px;
+    background-color: grey;
+    width: 18%;
+    float: left;
+    justify-content: center;
+}
+
+#header_sub{
+    background-color: rgba(253, 246, 231, .9);
+    width: 500px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    box-shadow: 1px 1px 5px 6px rgb(87, 87, 87, .2); 
+}
+
+@media only screen and (max-width: 520px) {
+    #header_sub {
+      width: 100%;
+      border-radius: 0%;
+      margin-bottom: 50px;
+    }
+  }
+
+.header3 {
+    font-size: 30px;
+    justify-content: center;
+}
+
+#counter {
+    background-color: lightgrey;
+    width: 30%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#hotels {
+    background-color: rgba(253, 246, 231, 1);
+    padding: 10px;
+    text-align: center;
+    
+}
+#hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-rows: 150px;
+    margin: 15px;
+    justify-content: center;
+}
+
+.hotel {
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 4px rgb(87, 87, 87, .1);
+    border-radius: 2%;
+}
+
+.prices {
+    text-align: center;
+    margin: 20px;
+}
+
+#travel {
+    display: grid;
+    background-color: rgba(253, 246, 231, 1);
+    padding: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+.station {
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 4px rgb(87, 87, 87, .1);
+    border-radius: 2%;
+    text-align: left;
+   
+}
+
+.map {
+
+    margin: 50px;
+}
+
+.map-link {
+    display: none;
+}
+
+@media only screen and (max-width: 1040px) {
+    .map {
+        display: none;
+    }
+    .map-link {
+        display: block;
+    }
+  }
+
+#footer {
+    background-color: rgba(253, 246, 231, .7);
+    padding: 8px;
+    
+}
+

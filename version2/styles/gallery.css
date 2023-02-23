@@ -1,0 +1,276 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background: url("../img/Capture.JPG") no-repeat fixed;
+    color: rgba(24, 17, 90, 1);
+    margin: 0;
+    height: 100%;
+    font-family: 'Lora', serif;
+}
+
+a {
+    color: rgba(24, 17, 90, 1);
+    text-decoration: none;
+}
+
+#header_sub{
+    background-color: rgba(253, 246, 231, .9);
+    width: 500px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    box-shadow: 1px 1px 5px 6px rgb(87, 87, 87, .2); 
+}
+
+#header_sub p{
+    margin: 8px;
+    text-align: center;
+}
+
+
+/* Menu styles */
+
+
+.menu-mobile {
+    text-align: right;  
+    padding-right: 16px;  
+    padding-top: 16px;
+    display: none;
+}
+
+#menu-open {
+    display: none;
+}
+
+.menu-st {
+    align-content: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top :0;
+    background-color: rgba(253, 246, 231, .9);
+    height: 40px;
+    margin-top: 0;
+    padding-top: 10px;
+    box-shadow: 1px 1px 5px 6px rgb(87, 87, 87, .2);
+}
+
+.menu-st a {
+    margin:30px;
+    justify-content: center;
+    
+}
+
+#counter {
+    background-color: lightgrey;
+    width: 30%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#venue {
+    background-color: rgba(253, 246, 231, 1);
+    padding: 10px;
+    text-align: center; 
+}
+
+#hotels {
+    background-color: rgba(253, 246, 231, 1);
+    padding: 10px;
+    text-align: center;   
+}
+
+#hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-rows: repeat(auto-fill, 200px);
+    margin: 15px;
+    justify-content: center;
+    grid-column: auto;
+}
+
+.hotel {
+    margin: 15px;
+    padding: 12px;
+    box-shadow: 0px 0px 3px 4px rgb(87, 87, 87, .1);
+    border-radius: 2%;
+    transition: font-size 0.2s 0.2s;
+    min-height: 122px;
+}
+
+.hotel:hover {
+    font-size: 17px;  
+}
+
+.hotel-name {
+    font-weight: bold;
+}
+
+.prices {
+    text-align: center;
+    margin: 20px;
+}
+
+#travel {
+    display: grid;
+    background-color: rgba(253, 246, 231, 1);
+    padding: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+.station {
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 4px rgb(87, 87, 87, .1);
+    border-radius: 2%;
+    text-align: left;
+   
+}
+
+.map {
+    margin: 50px;
+}
+
+.map-link {
+    display: none;
+}
+
+.mapFrame {
+    box-shadow: 1px 1px 5px 6px rgb(87, 87, 87, .2);
+}
+
+#taxi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    margin: 15px;
+    justify-content: center;
+}
+
+.taxi {
+    margin: 15px;
+    padding: 12px;
+    box-shadow: 0px 0px 3px 4px rgb(87, 87, 87, .1);
+    border-radius: 2%;
+    transition: font-size 0.2s 0.2s;
+    min-height: 100px;
+}
+
+.taxi:hover {
+    font-size: 17px;  
+}
+
+.taxi_name {
+    font-weight: bold;
+}
+
+.footer {
+    display: block;
+    bottom: 0;
+}
+
+#footer {
+    background-color: rgba(253, 246, 231);
+    padding: 8px;
+    box-shadow: 1px 1px 5px 6px rgb(87, 87, 87, .2);
+    bottom: 0;
+    display: absolute;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1040px) {
+    .map {
+        display: none;
+    }
+    .map-link {
+        display: block;
+    }
+  }
+
+
+
+
+/* Mobile Styles */
+
+
+@media only screen and (max-width: 520px) {
+
+    body {
+        background-size: 100%;
+    }
+
+
+    .menu-st {
+        display: none;
+    }
+
+    #header_sub {
+      width: 100%;
+      border-radius: 0%;
+      margin-bottom: 500px;
+    }
+
+    .menu-mobile {
+        text-align: right;  
+        padding-right: 16px;  
+        padding-top: 16px;
+        display: block;
+        background-color: rgba(0, 0, 0, .9);
+        color: rgba(253, 246, 231);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        overflow-x: hidden;
+    }
+
+    #menu-open {
+        display: block;
+        text-align: right;
+        padding: 16px;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    #menu-close {
+        text-align: right;
+        padding-right: 16px;
+        cursor: pointer;
+    }
+
+    menu a {
+        color: black;
+        display: block;
+        text-decoration: none;
+        color: rgba(253, 246, 231);
+        text-align: center;
+        padding: 8px;
+    }
+
+    #menu-open i {
+        cursor: pointer;
+    }
+
+    .closed {
+        display:none;
+    }
+
+    
+    
+    
+}
